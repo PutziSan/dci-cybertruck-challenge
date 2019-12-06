@@ -1,13 +1,131 @@
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+
 .hero {
   background-image: url("./assets/01_Main_Hero_Mobile.jpg");
   background-size: cover;
   background-position: center 33%;
   height: 100vh;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (min-width: 700px) {
+.header {
+  display: flex;
+  height: 12rem;
+  justify-content: space-between;
+
+}
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  flex: 1;
+}
+
+.svg {
+  width: 40rem;
+  flex: 4;
+  
+}
+
+.slogan {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Bebas Neue', cursive;
+  color: whitesmoke;
+  letter-spacing: .2rem;
+  flex: 1;
+  align-items: center;
+  text-align: center;
+  
+}
+
+
+
+button{
+  color: whitesmoke;
+  letter-spacing: .2rem;
+  margin-top: 2rem;
+  padding: 1rem 17rem 1rem 17rem ;
+  background-color: transparent;
+  text-align: center;
+  border-bottom-right-radius: 1rem;
+
+}
+
+.burger{
+  height: 3rem;
+  margin: 2rem;
+ }
+
+.logo {
+  margin: 2rem;
+  font-family: 'Bebas Neue', cursive;
+  color: black;
+  font-size: xx-large;
+  letter-spacing: .5rem;
+}
+
+
+
+nav{
+  display: none;
+}
+
+@media (min-width: 960px) {
   .hero {
     background-image: url("./assets/01_Main_Hero_Desktop.jpg")
   }
+
+.header{
+  display: flex;
+}
+
+
+
+
+nav{
+  flex: 6;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  
+  
+
+ }
+
+ li{
+  
+  padding: 1.5rem;
+ }
+
+
+
 }
