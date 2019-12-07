@@ -10,7 +10,7 @@ You can find the designs in `tesla-cybertruck-design-mobile.png` (MOBILE) and `t
 
 ## solution (example)
 
-You can find an example implementation in the branch [`example-solution`](/PutziSan/dci-cybertruck-challenge/tree/example-solution).
+You can find an example implementation in the branch [`example-solution`](https://github.com/PutziSan/dci-cybertruck-challenge/tree/example-solution).
 
 #### legal
 
