@@ -8,6 +8,10 @@ You can find the designs in `tesla-cybertruck-design-mobile.png` (MOBILE) and `t
 1. recreate the mobile and desktop hero-shot and push them to your forked repository
 1. make a pull request to this repository so I can review and comment your code.
 
+## solution (example)
+
+You can find an example implementation in the branch [`example-solution`](/PutziSan/dci-cybertruck-challenge/tree/example-solution).
+
 #### legal
 
 all assets are property of tesla, source: https://www.tesla.com/cybertruck
