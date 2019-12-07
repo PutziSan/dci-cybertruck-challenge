@@ -1,13 +1,188 @@
+html * {
+  font-size: 16px;
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 .hero {
   background-image: url("./assets/01_Main_Hero_Mobile.jpg");
   background-size: cover;
-  background-position: center 33%;
+  background-position: center;
   height: 100vh;
   width: 100%;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 1024px) {
   .hero {
-    background-image: url("./assets/01_Main_Hero_Desktop.jpg")
+    background-image: url("./assets/01_Main_Hero_Desktop.jpg");
+  }
+}
+
+.nav-list {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.btn {
+  color: white;
+  background-color: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 4px solid white;
+  font-size: 1.125rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.line-height-tight {
+  line-height: 1.25;
+}
+
+.margin-x-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.margin-x-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.margin-x-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.margin-top-4 {
+  margin-top: 1rem;
+}
+
+.margin-bottom-12 {
+  margin-bottom: 3rem;
+}
+
+.margin-left-auto {
+  margin-left: auto;
+}
+
+.max-h-full {
+  max-height: 100%;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.padding-y-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.padding-x-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.padding-x-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-gap-4 {
+  grid-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .md\:block {
+    display: block;
+  }
+
+  .md\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:margin-top-12 {
+    margin-top: 3rem;
+  }
+
+  .lg\:w-auto {
+    width: auto;
+  }
+
+  .lg\:justify-content-center {
+    justify-content: center;
   }
 }
