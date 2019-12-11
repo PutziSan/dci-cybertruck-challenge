@@ -1,13 +1,129 @@
-.hero {
-  background-image: url("./assets/01_Main_Hero_Mobile.jpg");
-  background-size: cover;
-  background-position: center 33%;
-  height: 100vh;
+
+
+/*////////////////// NAV-BAR*/
+.nav-bar{
+  padding: 0 10px ;
   width: 100%;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  li,h2{
+    color: blanchedalmond;
+  }
+  .nav-container{
+    flex-basis: 50%;
+    display: none;
+    justify-content: space-between;
+
+  }
+  .nav-menu{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+  }
+  .logo{
+    flex-basis: 10%;
+  }
+  
+
+  .logo, li{
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+  }
+
+/*//////////////////// main sections*/
+  .hero {
+    background-image: url("./assets/01_Main_Hero_Mobile.jpg");
+    background-size: cover;
+    background-position: center 33%;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 3fr 1fr 1fr;
+    grid-template-areas: 
+    "b b b b b"
+    ". c c c ."
+    ". d d d ."
+    ". . e . .";
+
+  }
+ 
+.hero-baseline{
+background-image: url(assets/image1.svg); 
+background-repeat: no-repeat;
+grid-area: c;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+margin-top: 10%;
 }
+.hero-text{
+grid-area: d;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+margin-top: 30%;
+text-transform: uppercase;
+color: blanchedalmond;
+}
+.hero-button{
+  grid-area: e;
+  display: flex;
+justify-content: center;
+align-items: flex-start;
+margin-top: 0%;
+}
+button{
+  border: 2PX SOLID blanchedalmond;
+  height: 40px;
+  width: 300px;
+  border-bottom-right-radius: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  color: blanchedalmond;
+}
+button:hover{
+background-color:rgb(255, 255, 255);
+color: rgb(41, 41, 41);
+}
+
 
 @media (min-width: 700px) {
   .hero {
     background-image: url("./assets/01_Main_Hero_Desktop.jpg")
   }
-}
+  .nav-container{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger{
+    display: none;
+  }
+  .nav-menu{
+    flex-basis: 20%;}
+    li,h2{
+      color: rgb(0, 0, 0);}
+  
+  .hero-baseline{
+      background-image: url(assets/image0.svg); 
+    }
+    button{
+      width: 200px;
+
+    }
+
+  }
+  @media (min-width: 874px) {
+    .hero-baseline{
+     margin-top: 0%;
+    }
+  }
+  
