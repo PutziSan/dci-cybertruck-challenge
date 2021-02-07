@@ -1,13 +1,130 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
 .hero {
+  display: flex;
+  flex-direction: column;
   background-image: url("./assets/01_Main_Hero_Mobile.jpg");
   background-size: cover;
   background-position: center 33%;
   height: 100vh;
   width: 100%;
+  /* background-color: black; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 2rem;
+  padding: 1rem;
+}
+
+.logo{
+  padding: .6rem;
+}
+
+.menu {
+  display: none;
+  flex: 1;
+  font-size: .8rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  
+}
+
+.hamb {
+  padding-top: .6rem;
+  color: red;
+}
+
+.image-content {
+  flex: 6;
+  width: 70%;
+  align-self: center;
+}
+
+.i-black{
+  display: none;
+}
+
+.content {
+ text-align: center;
+  flex: 1;
+  font-size: .8rem;
+  
+}
+
+.order {
+  text-align: center;
+  flex: 2;
+}
+.order-text {
+
+}
+
+.other-pages {
+  height: 2rem;
+  background-color: rebeccapurple;
+
+}
+
+button {
+  margin: 2rem;
+  background-color: transparent;
+  color: #fff;
+  width: 80%;
+}
+button :hover {
+  background-color: #fff;
+  color: black;
+}
+button p{
+  margin: 0 0;
+  padding: 1rem;
 }
 
 @media (min-width: 700px) {
+
+  body {
+  
+  }
   .hero {
     background-image: url("./assets/01_Main_Hero_Desktop.jpg")
   }
+
+  header{
+    color: black;
+  }
+  .menu {
+    display: block;
+  }
+
+  .i-black{
+    display: block;
+    align-self: center;
+    width: 35%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .i-white{
+    display: none;
+   
+  }
+
+  .content {
+     flex: 4;
+     font-size: 1.1rem;
+     
+   }
+   
+   .order {
+     flex: 2;
+   }
+
 }
